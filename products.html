@@ -7,12 +7,13 @@
 
     <title>Products | The Golden Glaze Bakery</title>
 
+    <!-- External CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <!-- Navigation bar -->
+    <!-- Header and Navigation -->
     <header>
         <nav>
             <h1>The Golden Glaze Bakery</h1>
@@ -28,55 +29,83 @@
     </header>
 
 
-    <!-- Products content -->
+    <!-- Main Content -->
     <main>
 
-        <section>
-            <h2>Our Products</h2>
+        <section class="menu-section">
+
+            <h2>Our Menu</h2>
 
             <p>
-                Explore our selection of freshly baked cinnamon rolls
-                made with care for our customers.
+                Explore some of our freshly baked cinnamon rolls.
             </p>
-        </section>
 
 
-        <!-- Product selection -->
-        <section class="products">
+            <!-- Product Cards -->
+            <div class="products">
 
-            <div class="product">
-                <h3>Classic Cinnamon Roll</h3>
+                <!-- Classic Cinnamon Roll -->
+                <div class="product">
 
-                <p>
-                    A soft and delicious cinnamon roll
-                    finished with a sweet glaze.
-                </p>
+                    <img
+                        src="images/cinnamon-classic.jpg"
+                        srcset="images/cinnamon-classic.jpg 600w"
+                        sizes="(max-width: 480px) 90vw,
+                               (max-width: 768px) 45vw,
+                               300px"
+                        alt="Classic cinnamon roll">
 
-                <p>Price:R40 </p>
-            </div>
+                    <h3>Classic Cinnamon Roll</h3>
 
+                    <p>
+                        A soft and freshly baked cinnamon roll with a
+                        delicious classic cinnamon flavour.
+                    </p>
 
-            <div class="product">
-                <h3>Special Cinnamon Roll</h3>
-
-                <p>
-                    A special cinnamon roll flavour created
-                    for customers looking for something different.
-                </p>
-
-                <p>Price:R80 </p>
-            </div>
+                </div>
 
 
-            <div class="product">
-                <h3>Golden Glaze Roll</h3>
+                <!-- Special Cinnamon Roll -->
+                <div class="product">
 
-                <p>
-                    Our signature cinnamon roll finished
-                    with a delicious golden glaze.
-                </p>
+                    <img
+                        src="images/cinnamon-special.jpg"
+                        srcset="images/cinnamon-special.jpg 600w"
+                        sizes="(max-width: 480px) 90vw,
+                               (max-width: 768px) 45vw,
+                               300px"
+                        alt="Special cinnamon roll">
 
-                <p>Price:R65 </p>
+                    <h3>Special Cinnamon Roll</h3>
+
+                    <p>
+                        A freshly baked cinnamon roll topped with a
+                        delicious sweet finish.
+                    </p>
+
+                </div>
+
+
+                <!-- Golden Glaze Cinnamon Roll -->
+                <div class="product">
+
+                    <img
+                        src="images/cinnamon-gold.jpg"
+                        srcset="images/cinnamon-gold.jpg 600w"
+                        sizes="(max-width: 480px) 90vw,
+                               (max-width: 768px) 45vw,
+                               300px"
+                        alt="Golden Glaze cinnamon roll">
+
+                    <h3>Golden Glaze Cinnamon Roll</h3>
+
+                    <p>
+                        Our signature cinnamon roll finished with a
+                        sweet and delicious golden glaze.
+                    </p>
+
+                </div>
+
             </div>
 
         </section>
@@ -90,7 +119,7 @@
     </footer>
 
 
-    <!-- Connect JavaScript to this page -->
+    <!-- JavaScript -->
     <script src="js/script.js"></script>
 
 </body>
