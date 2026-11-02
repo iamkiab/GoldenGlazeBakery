@@ -177,3 +177,8 @@ Developed as part of a web development assignment.
 ## Project Repository
 
 GitHub: https://github.com/iamkiab/GoldenGlazeBakery
+## Live Website
+
+The Golden Glaze Bakery website is published using GitHub Pages.
+
+Website: https://iamkiab.github.io/GoldenGlazeBakery/
