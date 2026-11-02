@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,15 +6,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Products | The Golden Glaze Bakery</title>
+    <title>Fresh Cinnamon Rolls | The Golden Glaze Bakery</title>
 
-    <!-- External CSS -->
+    <meta name="description" content="Explore freshly baked cinnamon rolls at The Golden Glaze Bakery. Discover our classic, special and signature Golden Glaze cinnamon rolls.">
+
+    <meta name="keywords" content="cinnamon rolls, freshly baked cinnamon rolls, bakery, Golden Glaze Bakery">
+
+    <meta name="author" content="The Golden Glaze Bakery">
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <!-- Header and Navigation -->
     <header>
         <nav>
             <h1>The Golden Glaze Bakery</h1>
@@ -28,100 +33,131 @@
         </nav>
     </header>
 
-
-    <!-- Main Content -->
     <main>
 
         <section class="menu-section">
 
-            <h2>Our Menu</h2>
+            <h2>Our Cinnamon Roll Menu</h2>
 
             <p>
-                Explore some of our freshly baked cinnamon rolls.
+                Explore our freshly baked cinnamon rolls and find
+                your favourite Golden Glaze treat.
             </p>
 
+            <!-- Product Search and Filter -->
+            <div class="product-controls">
+
+                <label for="productSearch">Search for a product:</label>
+
+                <input
+                    type="search"
+                    id="productSearch"
+                    placeholder="Search cinnamon rolls..."
+                    aria-label="Search bakery products"
+                >
+
+                <label for="categoryFilter">Filter products:</label>
+
+                <select id="categoryFilter">
+                    <option value="all">All Products</option>
+                    <option value="classic">Classic</option>
+                    <option value="special">Special</option>
+                    <option value="signature">Signature</option>
+                </select>
+
+                <label for="productSort">Sort products:</label>
+
+                <select id="productSort">
+                    <option value="default">Default Order</option>
+                    <option value="az">Name: A to Z</option>
+                    <option value="za">Name: Z to A</option>
+                </select>
+
+            </div>
+
+            <!-- Product Results -->
+            <p id="productCount" aria-live="polite">
+                Showing 3 products.
+            </p>
 
             <!-- Product Cards -->
-            <div class="products">
+            <div class="products" id="productList">
 
-                <!-- Classic Cinnamon Roll -->
-                <div class="product">
+                <article class="product" data-category="classic">
 
                     <img
                         src="images/cinnamon-classic.jpg"
-                        srcset="images/cinnamon-classic.jpg 600w"
-                        sizes="(max-width: 480px) 90vw,
-                               (max-width: 768px) 45vw,
-                               300px"
-                        alt="Classic cinnamon roll">
+                        alt="Freshly baked classic cinnamon roll"
+                        loading="lazy"
+                        tabindex="0"
+                        role="button"
+                        aria-label="View classic cinnamon roll image"
+                    >
 
                     <h3>Classic Cinnamon Roll</h3>
 
                     <p>
-                        A soft and freshly baked cinnamon roll with a
-                        delicious classic cinnamon flavour.
+                        A soft and freshly baked cinnamon roll with
+                        a delicious classic cinnamon flavour.
                     </p>
 
-                </div>
+                </article>
 
-
-                <!-- Special Cinnamon Roll -->
-                <div class="product">
+                <article class="product" data-category="special">
 
                     <img
                         src="images/cinnamon-special.jpg"
-                        srcset="images/cinnamon-special.jpg 600w"
-                        sizes="(max-width: 480px) 90vw,
-                               (max-width: 768px) 45vw,
-                               300px"
-                        alt="Special cinnamon roll">
+                        alt="Special cinnamon roll with sweet topping"
+                        loading="lazy"
+                        tabindex="0"
+                        role="button"
+                        aria-label="View special cinnamon roll image"
+                    >
 
                     <h3>Special Cinnamon Roll</h3>
 
                     <p>
-                        A freshly baked cinnamon roll topped with a
-                        delicious sweet finish.
+                        A freshly baked cinnamon roll topped with
+                        a delicious sweet finish.
                     </p>
 
-                </div>
+                </article>
 
-
-                <!-- Golden Glaze Cinnamon Roll -->
-                <div class="product">
+                <article class="product" data-category="signature">
 
                     <img
                         src="images/cinnamon-gold.jpg"
-                        srcset="images/cinnamon-gold.jpg 600w"
-                        sizes="(max-width: 480px) 90vw,
-                               (max-width: 768px) 45vw,
-                               300px"
-                        alt="Golden Glaze cinnamon roll">
+                        alt="Golden Glaze signature cinnamon roll"
+                        loading="lazy"
+                        tabindex="0"
+                        role="button"
+                        aria-label="View Golden Glaze signature cinnamon roll image"
+                    >
 
                     <h3>Golden Glaze Cinnamon Roll</h3>
 
                     <p>
-                        Our signature cinnamon roll finished with a
-                        sweet and delicious golden glaze.
+                        Our signature cinnamon roll finished with
+                        a sweet and delicious golden glaze.
                     </p>
 
-                </div>
+                </article>
 
             </div>
+
+            <p id="noProducts" hidden>
+                No products found. Please try another search.
+            </p>
 
         </section>
 
     </main>
 
-
-    <!-- Footer -->
     <footer>
         <p>&copy; 2026 The Golden Glaze Bakery</p>
     </footer>
 
-
-    <!-- JavaScript -->
     <script src="js/script.js"></script>
 
 </body>
-
 </html>

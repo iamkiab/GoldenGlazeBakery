@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,8 +6,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Enquiry | The Golden Glaze Bakery</title>
+    <title>Make an Enquiry | The Golden Glaze Bakery</title>
 
+    <meta name="description" content="Contact The Golden Glaze Bakery for product enquiries, large orders and special occasion requests.">
+    <meta name="keywords" content="Golden Glaze Bakery, cinnamon rolls, bakery enquiries, large orders">
+    
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -27,54 +31,70 @@
         </nav>
     </header>
 
-
-    <!-- Enquiry content -->
+    <!-- Main enquiry content -->
     <main>
 
-        <section>
+        <section class="enquiry-section">
 
             <h2>Make an Enquiry</h2>
 
             <p>
-                Have a question about our products?
-                Complete the form below and we will get back to you.
+                Interested in our freshly baked cinnamon rolls?
+                Complete the form below and tell us how we can assist you.
+                Our team will get back to you as soon as possible.
             </p>
 
-
             <!-- Enquiry form -->
-            <form>
+            <form id="enquiryForm" action="#" method="post">
 
                 <label for="name">Full Name:</label>
-                <input type="text" id="name" name="name" required>
-
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your full name"
+                    minlength="2"
+                    required>
 
                 <label for="email">Email Address:</label>
-                <input type="email" id="email" name="email" required>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email address"
+                    required>
 
+                <label for="phone">Contact Number:</label>
+                <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="Enter your contact number"
+                    pattern="[0-9+\s()-]{7,20}">
 
                 <label for="enquiry-type">Enquiry Type:</label>
 
-                <select id="enquiry-type" name="enquiry-type">
-
+                <select id="enquiry-type" name="enquiry-type" required>
+                    <option value="">Select an enquiry type</option>
                     <option value="product">Product Enquiry</option>
                     <option value="order">Large Order</option>
                     <option value="occasion">Special Occasion</option>
                     <option value="general">General Enquiry</option>
-
                 </select>
 
-
-                <label for="message">Message:</label>
+                <label for="message">Your Message:</label>
 
                 <textarea
                     id="message"
                     name="message"
                     rows="6"
-                    required>
-                </textarea>
-
+                    minlength="10"
+                    placeholder="Please provide details about your enquiry..."
+                    required></textarea>
 
                 <button type="submit">Submit Enquiry</button>
+
+                <p id="enquiryFeedback" role="status" aria-live="polite"></p>
 
             </form>
 
@@ -82,14 +102,12 @@
 
     </main>
 
-
     <!-- Footer -->
     <footer>
         <p>&copy; 2026 The Golden Glaze Bakery</p>
     </footer>
 
-
-    <!-- Connect JavaScript to this page -->
+    <!-- JavaScript -->
     <script src="js/script.js"></script>
 
 </body>

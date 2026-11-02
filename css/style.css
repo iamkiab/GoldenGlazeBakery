@@ -327,3 +327,193 @@ main {
         font-size: 0.95rem;
     }
 }
+
+/* =====================================
+   PART 3 - PRODUCT SEARCH AND FILTERS
+===================================== */
+
+.product-controls {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin: 25px auto;
+}
+
+.product-controls input,
+.product-controls select {
+    padding: 10px;
+    border: 1px solid #b89565;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.product {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
+.product img {
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.product img:hover {
+    opacity: 0.85;
+}
+
+#productCount {
+    text-align: center;
+    margin: 15px 0;
+}
+
+#noProducts {
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+}
+
+
+/* =====================================
+   PART 3 - IMAGE LIGHTBOX
+===================================== */
+
+.image-lightbox {
+    width: min(90%, 700px);
+    max-width: 700px;
+    border: none;
+    border-radius: 12px;
+    padding: 20px;
+    background: #fffaf2;
+    text-align: center;
+}
+
+.image-lightbox::backdrop {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.lightbox-image {
+    display: block;
+    max-width: 100%;
+    max-height: 70vh;
+    object-fit: contain;
+    margin: 20px auto 10px;
+}
+
+.lightbox-caption {
+    color: #654321;
+    font-weight: bold;
+}
+
+.lightbox-close {
+    display: block;
+    margin-left: auto;
+    border: none;
+    background: transparent;
+    font-size: 30px;
+    cursor: pointer;
+    color: #654321;
+}
+
+
+/* =====================================
+   RESPONSIVE PRODUCT CONTROLS
+===================================== */
+
+@media (max-width: 600px) {
+
+    .product-controls {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 0 15px;
+    }
+
+    .product-controls input,
+    .product-controls select {
+        width: 100%;
+    }
+
+}
+/* =================================
+   PART 3: WEBSITE ANIMATIONS
+================================= */
+
+/* Smooth transitions for links and buttons */
+a,
+button {
+    transition: color 0.3s ease,
+                background-color 0.3s ease,
+                transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+/* Product card hover effect */
+.product {
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.product:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Button hover effect */
+button:hover {
+    transform: translateY(-2px);
+}
+
+/* Fade-in animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply animation to main sections */
+main section {
+    animation: fadeInUp 0.7s ease both;
+}
+
+/* Respect visitors who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+/* =================================
+   PART 3: INTERACTIVE MAP STYLING
+================================= */
+
+.map-section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.bakery-map {
+    width: 100%;
+    height: 400px;
+    margin: 20px auto;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.map-note {
+    font-size: 13px;
+    color: #777;
+}

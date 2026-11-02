@@ -1,131 +1,179 @@
-# The Golden Glaze Bakery Website
+
+# The Golden Glaze Bakery
+
+## Website Development Project
+
+The Golden Glaze Bakery is a website developed as part of a web development assignment. The website represents a fictional bakery specialising in freshly made cinnamon rolls.
+
+The purpose of the website is to provide visitors with information about the bakery, display its products, and allow customers to make enquiries and contact the bakery.
+
+---
 
 ## Project Overview
 
-The Golden Glaze Bakery website was created for a small bakery that specialises in cinnamon rolls. The purpose of the website is to showcase the bakery's products and provide customers with useful information about the business.
+The website was developed using:
 
-The website was developed using HTML, CSS and JavaScript.
+- HTML5 – To structure the website content.
+- CSS3 – To style the website and create a consistent design.
+- JavaScript – To add interactive functionality.
+- Leaflet.js – To display an interactive demonstration map.
+- OpenStreetMap – To provide map data.
 
-## Website Goals and Objectives
-
-The main goals of the website are to:
-
-- Showcase the bakery's cinnamon rolls and available options.
-- Provide customers with information about the bakery.
-- Make it easy for customers to send enquiries.
-- Provide location and contact information.
-- Increase awareness of The Golden Glaze Bakery.
-- Create a simple and user-friendly website.
-
-## Website Features
-
-The website consists of five main pages:
-
-- Home
-- About Us
-- Products
-- Enquiry
-- Contact
-
-The website also includes navigation links, product images, enquiry information and contact details.
+The website uses a warm bakery-inspired design with cream, brown and golden colours.
 
 ---
 
-# Part 1 – Website Development
+## Website Pages
 
-During Part 1, the basic structure and content of the website were created using HTML.
+The website consists of the following pages:
 
-Semantic HTML elements such as `header`, `nav`, `main`, `section` and `footer` were used to organise the website.
-
-The five HTML pages were linked together using a navigation menu so that users can easily move between the different pages.
-
-A sitemap was also created to show the structure and hierarchy of the website.
-
-## Part 1 Feedback
-
-The feedback received for Part 1 was positive and no major corrections were required. The existing website structure and content were therefore kept and improved further during Part 2.
+| Page | Description |
+|---|---|
+| Home | Introduces the bakery and highlights featured products. |
+| About | Provides information about the bakery's background, mission and vision. |
+| Products | Displays the available cinnamon roll products. |
+| Enquiry | Allows visitors to submit product and service enquiries. |
+| Contact | Displays contact information, an interactive map and a contact form. |
 
 ---
 
-# Part 2 – CSS Styling and Responsive Design
+## Part 2: Website Development
 
-During Part 2, CSS was used to improve the appearance and responsiveness of The Golden Glaze Bakery website.
+The website was developed using HTML and CSS.
 
-## CSS Styling
+The main development features included:
 
-An external CSS stylesheet was used to maintain a consistent design across the website.
-
-The website uses a warm bakery colour scheme consisting mainly of cream, brown, gold and white.
-
-CSS was used to style the typography, navigation, product cards, spacing, backgrounds, borders and other website elements.
-
-Flexbox was used to organise content such as the navigation and product cards.
-
-Hover, focus and active effects were also added to interactive elements.
-
-## Responsive Design
-
-Media queries were added to make the website responsive across different screen sizes.
-
-The main screen sizes tested were:
-
-- Desktop – 1200px
-- Tablet – 768px
-- Mobile – 375px
-
-Relative units such as `rem` and percentages were used to improve the responsiveness of the website.
-
-Responsive image techniques such as `srcset`, `sizes` and the `picture` element were also used.
-
-## Responsive Testing
-
-The website was tested using browser developer tools to check that the content displays correctly on different devices.
-
-### Desktop View
-
-![Desktop View](screenshots/desktop-view.png)
-
-### Tablet View
-
-![Tablet View](screenshots/tablet-view.png)
-
-### Mobile View
-
-![Mobile View](screenshots/mobile-view.png)
+- Creating the website structure.
+- Developing the navigation menu.
+- Designing the homepage.
+- Creating the About page.
+- Displaying bakery products.
+- Creating enquiry and contact pages.
+- Applying consistent styling across the website.
+- Creating a responsive layout for different screen sizes.
 
 ---
 
-# Changelog
+## Part 3: Enhancing Functionality and SEO
 
-## Part 1
+Additional functionality and search engine optimisation improvements were introduced.
 
-- Created the initial five-page website structure.
-- Added navigation between all website pages.
-- Added bakery information and product content.
-- Added images to the website.
-- Created the website sitemap.
+### JavaScript Functionality
 
-## Part 2
+The following features were implemented:
 
-- Added and improved the external CSS stylesheet.
-- Added a consistent colour scheme and typography.
-- Improved the desktop website layout using Flexbox.
-- Improved the appearance of the product cards.
-- Added borders and box shadows.
-- Added hover, focus and active effects to interactive elements.
-- Added responsive tablet and mobile layouts using media queries.
-- Added relative CSS units for responsive sizing and spacing.
-- Added responsive image techniques using `srcset`, `sizes` and `picture`.
-- Tested the website at desktop, tablet and mobile screen sizes.
-- Added responsive testing screenshots to the project.
+- Product search functionality.
+- Product category filtering.
+- Alphabetical product sorting.
+- Product image lightbox.
+- Enquiry form validation.
+- Contact form validation.
+- Interactive Leaflet map with two fictional bakery branch markers.
+- Hover effects and CSS animations.
+- DOM manipulation to update product listings and display feedback messages.
+
+### Forms
+
+Two separate forms were included:
+
+**Enquiry Form**
+- Collects customer names and email addresses.
+- Allows customers to select an enquiry category.
+- Includes an optional phone number.
+- Allows customers to describe their enquiry.
+- Uses form validation to check required information.
+
+**Contact Form**
+- Collects customer contact details.
+- Allows visitors to select a message type.
+- Validates the submitted information.
+- Prepares an email draft using the visitor's email application.
+
+### Search Engine Optimisation (SEO)
+
+The following SEO improvements were made:
+
+- Page-specific title tags.
+- Meta descriptions.
+- Relevant keywords.
+- Descriptive image alternative text.
+- Appropriate heading structures.
+- Internal navigation links.
+- Mobile-friendly layout.
+- robots.txt file.
+- sitemap.xml file.
 
 ---
 
-# References
-Mozilla Developer Network (MDN). 2026. CSS flexible box layout. [Online]. Available at: https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Flexible_box_layout [Accessed 18 September 2026].
+## Project Folder Structure
 
-Mozilla Developer Network (MDN). 2026. CSS media queries. [Online]. Available at: https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Media_queries [Accessed 18 September 2026].
+```text
+GoldenGlazeBakery/
+│
+├── index.html
+├── about.html
+├── products.html
+├── enquiry.html
+├── contact.html
+├── robots.txt
+├── sitemap.xml
+├── README.md
+├── CHANGELOG.md
+│
+├── css/
+│   └── style.css
+│
+├── js/
+│   └── script.js
+│
+└── images/
+```
 
-Mozilla Developer Network (MDN). 2026. Using responsive images in HTML. [Online]. Available at: https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Responsive_images [Accessed 18 September 2026].
+---
 
-Canva. 2026. Creating a low-fidelity wireframe: How-tos, templates, and tips. [Online]. Available at: https://www.canva.com/online-whiteboard/low-fidelity-wireframes/ [Accessed 18 September 2026]..
+## How to Run the Website
+
+1. Download or clone the project repository from GitHub.
+2. Open the project folder in Visual Studio Code.
+3. Open the `index.html` file.
+4. Run the website using the Live Server extension.
+5. Use the navigation menu to explore the different pages.
+
+An internet connection is required for the external Leaflet map and OpenStreetMap tiles.
+
+---
+
+## Testing
+
+The website should be tested to ensure that:
+
+- All navigation links work correctly.
+- Product search and filtering work.
+- Product sorting works.
+- Product images open in the lightbox.
+- Enquiry form validation works.
+- Contact form validation works.
+- The interactive map displays both demonstration markers.
+- The website displays correctly on different screen sizes.
+
+---
+
+## Project Limitations
+
+This project is a frontend school assignment.
+
+The forms demonstrate validation and user interaction but are not connected to a database or online email delivery service.
+
+The contact form prepares an email draft rather than automatically sending a message.
+
+The map markers are fictional demonstration locations and do not represent verified business addresses.
+
+---
+
+## Author
+
+Developed as part of a web development assignment.
+
+## Project Repository
+
+GitHub: https://github.com/iamkiab/GoldenGlazeBakery
